@@ -1,15 +1,16 @@
 // Implement an alogrithm to determine is a string has all unique characters.
 
-function isUnique(str) {
-  var newArr = str.split('')
-  newArr.reduce(function(prev, curr) {
-    if (prev === curr) {
-      console.log("The string has repeated characters");
+function isUnique (str) {
+  var newArr = str.split('');
+  var valuesSoFar = {};
+  for (var i = 0; i < newArr.length; i++) {
+    var value = newArr[i];
+    if (value in valuesSoFar) {
+      return false;
     }
-    else {
-      console.log("The string is unique!");
-    }
-  })
+    valuesSoFar[value] = false
+  }
+  return true
 }
 
-isUnique("hello")
+console.log(isUnique("Hello"));
