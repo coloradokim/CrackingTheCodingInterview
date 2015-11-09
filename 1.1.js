@@ -1,7 +1,7 @@
 // Implement an alogrithm to determine is a string has all unique characters.
 
-function isUnique (str) {
-  var newArr = str.split('');
+function isUnique (testCase) {
+  var newArr = testCase.split('');
   var valuesSoFar = {};
   for (var i = 0; i < newArr.length; i++) {
     var value = newArr[i];
@@ -13,4 +13,6 @@ function isUnique (str) {
   return true
 }
 
-console.log(isUnique("Hello"));
+console.log(isUnique("Hiya!"));
+
+// convert a number to an array of strings: n.toString().split("");
