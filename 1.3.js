@@ -2,12 +2,9 @@
 
 function URLify (str) {
   var newArr = str.split('')
-  var index = newArr.indexOf(" ");
-  if (index !== -1) {
-    newArr[index] = "%20"
-    console.log(newArr.join(" "))
-  }
-}
+
+// will try again with a regular expression
 
 
-URLify("It is cold")
+
+URLify("Winter is coming")
