@@ -10,4 +10,4 @@ function URLify (str) {
 }
 
 
-URLify("Kim is confused.")
+URLify("It is cold")
