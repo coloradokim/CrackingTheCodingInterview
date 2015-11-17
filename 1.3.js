@@ -2,9 +2,18 @@
 
 function URLify (str) {
   var newArr = str.split('')
+  var mapArr = newArr.map(function(item) {
+    if (item === " ") {
+      return "%20"
+    }
+    else {
+      return item
+    }
+  })
+  return mapArr.join("")
+}
 
-// will try again with a regular expression
 
 
 
-URLify("Winter is coming")
+console.log(URLify("Winter is coming"));
