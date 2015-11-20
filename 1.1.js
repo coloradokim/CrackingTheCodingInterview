@@ -14,5 +14,3 @@ function isUnique (testCase) {
 }
 
 console.log(isUnique("Hiya!"));
-
-// convert a number to an array of strings: n.toString().split("");
