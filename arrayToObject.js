@@ -11,3 +11,5 @@ var obj1 = arr1.reduce(function(prev, curr, index) {
   prev[index] = curr;
   return prev;
 }, {});
+
+console.log(obj1);
