@@ -1,16 +1,18 @@
 // Implement an alogrithm to determine is a string has all unique characters.
 
-function isUnique (testCase) {
+function isUnique(testCase) {
   var newArr = testCase.split('');
   var valuesSoFar = {};
-  for (var i = 0; i < newArr.length; i++) {
+  for (var i =0; i < newArr.length; i++) {
     var value = newArr[i];
     if (value in valuesSoFar) {
       return false;
     }
-    valuesSoFar[value] = false
+    valuesSoFar[value] = false;
   }
-  return true
+  return true;
 }
 
-console.log(isUnique("Hiya!"));
+
+
+isUnique("Kimberly Schlesinger!");

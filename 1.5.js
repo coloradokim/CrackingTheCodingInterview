@@ -12,11 +12,9 @@ function canEdit (str1, str2) {
   arr1 = str1.toLowerCase().split("")
   arr2 = str2.toLowerCase().split("")
 
-  if (arr1.length !== arr2.length || arr1.length !== arr2.length +1 || arr1.length !== arr2.length +1) {
-    return false
-  }
+  
 
-
+console.log(arr2);
   var obj1 = {};
   for (var i = 0; i < arr1.length; i++) {
     obj1[i] = arr1[i]
@@ -28,4 +26,4 @@ function canEdit (str1, str2) {
   }
 }
 
-console.log(canEdit ("pale", "pale"))
+console.log(canEdit ("pale", "ple"))
